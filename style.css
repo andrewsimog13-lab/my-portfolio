@@ -1,0 +1,78 @@
+/* Це коментар в CSS. Все, що між цими символами - не впливає на сторінку */
+
+/* Стилі для всього тіла сторінки */
+body {
+    font-family: Arial, sans-serif; /* Змінює шрифт */
+    max-width: 800px; /* Обмежує ширину контенту */
+    margin: 0 auto; /* Вирівнює по центру */
+    padding: 20px; /* Додає відступи всередині */
+    background-color: #f0f8ff; /* Дуже світлий блакитний фон */
+    line-height: 1.6; /* Робить текст більш читабельним */
+}
+
+/* Стилі для головного заголовка */
+h1 {
+    color: #2c3e50; /* Темно-синій колір */
+    text-align: center; /* Вирівнює текст по центру */
+    border-bottom: 2px solid #3498db; /* Синя лінія під заголовком */
+    padding-bottom: 10px; /* Відступ між текстом і лінією */
+}
+
+/* Стилі для фото */
+img {
+    border-radius: 50%; /* Робить фото круглим! */
+    display: block; /* Робить фото блоковим елементом */
+    margin: 20px auto; /* Вирівнює фото по центру */
+    border: 3px solid #3498db; /* Синя рамка навколо фото */
+}
+
+/* Стилі для списку цілей */
+ul {
+    background-color: white; /* Білий фон для списку */
+    padding: 20px; /* Відступи всередині списку */
+    border-radius: 10px; /* Заокруглені кути */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Легка тінь */
+}
+
+/* Стилі для кожного пункту списку */
+li {
+    margin-bottom: 10px; /* Відступ між пунктами */
+    color: #34495e; /* Колір тексту */
+}/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}/* Стилі для темної теми */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme h1 {
+    color: #ffffff;
+    border-bottom-color: #ff6b6b;
+}
+
+body.dark-theme ul {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-theme li {
+    color: #ffffff;
+}
