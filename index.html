@@ -7,22 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Привіт, я Андрій!</h1>
-   <p>Я починаючий веб-розробник і це моя перша сторінка!</p>
-       <!-- Додаємо фото -->
-    <img src="my-photo.jpg" alt="Моє фото" width="400">
+<!-- Шапка сайту -->
+<header class="header">
+    <!-- Твоє ім'я як логотип -->
+    <div class="logo">
+        <h1>Андрій</h1>
+        <p>Веб-розробник</p>
+    </div>
     
-    <!-- Додаємо список цілей -->
-    <h2>Мої цілі на навчання:</h2>
-    <ul>
-        <li>Вивчити HTML та CSS</li>
-        <li>Опанувати JavaScript</li>
-        <li>Створити свій перший сайт</li>
-        <li>Робити сайти на раз два</li>
-    </ul>
-    <!-- Додаємо кнопку для зміни теми -->
-<button id="themeButton">Змінити на темну тему</button>
-    <!-- Підключаємо JavaScript -->
+    <!-- Головна навігація -->
+    <nav class="main-nav">
+        <a href="#about">Про мене</a>
+        <a href="#goals">Цілі</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <!-- Секція "Про мене" -->
+        <section id="about" class="about-section">
+            <h2>Про мене</h2>
+            <img src="my-photo.jpg" alt="Моє фото" width="200">
+            <p>Я починаючий веб-розробник і це моя перша сторінка!</p>
+        </section>
+
+        <!-- Секція "Мої цілі" -->
+        <section id="goals" class="goals-section">
+            <h2>Мої цілі на навчання</h2>
+            <ul>
+                <li>Вивчити HTML та CSS</li>
+                <li>Опанувати JavaScript</li>
+                <li>Створити своє перше портфоліо</li>
+                <li>Знайти роботу в IT</li>
+            </ul>
+        </section>
+
+        <!-- Секція "Контакти" -->
+        <section id="contacts" class="contacts-section">
+            <h2>Контакти</h2>
+            <p>Email: example@email.com</p>
+        </section>
+    </main>
+
+    <!-- Кнопка зміни теми -->
+    <div class="theme-switcher">
+        <button id="themeButton">Змінити на темну тему</button>
+    </div>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+        <p>&copy; 2024 Моє перше портфоліо. Всі права захищені.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
